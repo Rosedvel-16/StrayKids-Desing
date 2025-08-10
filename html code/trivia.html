@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Curiosos de Stray Kids | STAY Trivia</title>
+    <link rel="stylesheet" href="../css code/footer-header.css">
+    <link rel="stylesheet" href="../css code/datos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="../imagenes/logoSKZ.png" alt="Logo Stray Kids"></div>
+        <nav>
+            <div class="desplegable">
+                <button class="btnopciones">Despliega opciones</button>
+                <div class="opciones">
+                    <a href="../index.html">Inicio</a>
+                    <a href="integrantes.html">Integrantes</a>
+                    <a href="Merchandising.html">Merchandising</a>
+                    <a href="Eventos.html">Eventos</a>
+                    <a href="discografia.html">Discografía</a>
+                    <a href="galeria.html">Galería</a>
+                    <a href="trivia.html">Datos Curiosos</a>
+                </div>
+            </div>    
+            <div class="iniciarsesion">
+                <a href="IniciarSesion.html">Iniciar Sesion</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pagina-trivia">
+        <section class="hero-trivia">
+            <div class="hero-content">
+                <h1>Datos Curiosos de Stray Kids</h1>
+                <p>Descubre los secretos y curiosidades que no conocías sobre tus idols favoritos</p>
+            </div>
+        </section>
+
+        <section class="filtros-trivia">
+            <div class="container">
+                <div class="filtros-content">
+                    <div class="search-box">
+                        <input type="text" placeholder="Buscar curiosidades..." id="search-trivia">
+                        <button id="search-btn-trivia"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="categorias">
+                        <button class="filter-btn active" data-filter="all">Todos</button>
+                        <button class="filter-btn" data-filter="bangchan">Bang Chan</button>
+                        <button class="filter-btn" data-filter="lee know">Lee Know</button>
+                        <button class="filter-btn" data-filter="changbin">Changbin</button>
+                        <button class="filter-btn" data-filter="hyunjin">Hyunjin</button>
+                        <button class="filter-btn" data-filter="han">Han</button>
+                        <button class="filter-btn" data-filter="felix">Felix</button>
+                        <button class="filter-btn" data-filter="seungmin">Seungmin</button>
+                        <button class="filter-btn" data-filter="in">I.N</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lista-trivia">
+            <div class="container">
+                <div class="trivia-grid">
+                    <!-- Bang Chan -->
+                    <article class="trivia-card" data-categoria="bangchan">
+                        <div class="trivia-imagen">
+                            <img src="../galeria/bang1.jpg" alt="Bang Chan dato curioso">
+                            <span class="badge">Líder</span>
+                        </div>
+                        <div class="trivia-content">
+                            <h2 class="trivia-title">Bang Chan</h2>
+                            <div class="trivia-dato">
+                                <p>Christopher Bang, conocido como Bang Chan, es bilingüe en inglés y coreano. Pasó 7 años en Australia antes de unirse a JYP Entertainment.</p>
+                            </div>
+                            <div class="trivia-meta">
+                                <span class="trivia-tipo">Habilidad</span>
+                                <button class="trivia-like"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Lee Know -->
+                    <article class="trivia-card" data-categoria="lee know">
+                        <div class="trivia-imagen">
+                            <img src="../galeria/images.jpg" alt="Lee Know dato curioso">
+                            <span class="badge">Bailarín</span>
+                        </div>
+                        <div class="trivia-content">
+                            <h2 class="trivia-title">Lee Know</h2>
+                            <div class="trivia-dato">
+                                <p>Antes de ser idol, Lee Know trabajó como bailarín de respaldo para BTS durante su gira "Wings". ¡Incluso apareció en algunos de sus videos musicales!</p>
+                            </div>
+                            <div class="trivia-meta">
+                                <span class="trivia-tipo">Carrera</span>
+                                <button class="trivia-like"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Changbin -->
+                    <article class="trivia-card" data-categoria="changbin">
+                        <div class="trivia-imagen">
+                            <img src="../galeria/chan.jpg" alt="Changbin dato curioso">
+                            <span class="badge">Rapero</span>
+                        </div>
+                        <div class="trivia-content">
+                            <h2 class="trivia-title">Changbin</h2>
+                            <div class="trivia-dato">
+                                <p>Changbin tiene una habilidad única para rapear extremadamente rápido. En una demostración, rapeó 10.8 sílabas por segundo, ¡casi rompiendo un récord!</p>
+                            </div>
+                            <div class="trivia-meta">
+                                <span class="trivia-tipo">Habilidad</span>
+                                <button class="trivia-like"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Hyunjin -->
+                    <article class="trivia-card" data-categoria="hyunjin">
+                        <div class="trivia-imagen">
+                            <img src="../galeria/hyun.webp" alt="Hyunjin dato curioso">
+                            <span class="badge destacado">Visual</span>
+                        </div>
+                        <div class="trivia-content">
+                            <h2 class="trivia-title">Hyunjin</h2>
+                            <div class="trivia-dato">
+                                <p>Hyunjin es ambidiestro (puede usar ambas manos con igual habilidad). Aprendió a escribir con ambas manos para mejorar su coordinación como bailarín.</p>
+                            </div>
+                            <div class="trivia-meta">
+                                <span class="trivia-tipo">Habilidad</span>
+                                <button class="trivia-like"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Han -->
+                    <article class="trivia-card" data-categoria="han">
+                        <div class="trivia-imagen">
+                            <img src="../galeria/han.jpg" alt="Han dato curioso">
+                            <span class="badge">Multitalento</span>
+                        </div>
+                        <div class="trivia-content">
+                            <h2 class="trivia-title">Han</h2>
+                            <div class="trivia-dato">
+                                <p>Han Jisung puede imitar perfectamente el sonido de una motocicleta. Esta habilidad apareció en el reality show de Stray Kids y dejó a todos impresionados.</p>
+                            </div>
+                            <div class="trivia-meta">
+                                <span class="trivia-tipo">Habilidad</span>
+                                <button class="trivia-like"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Felix -->
+                    <article class="trivia-card" data-categoria="felix">
+                        <div class="trivia-imagen">
+                            <img src="../galeria/felix.jpg" alt="Felix dato curioso">
+                            <span class="badge destacado">Voz única</span>
+                        </div>
+                        <div class="trivia-content">
+                            <h2 class="trivia-title">Felix</h2>
+                            <div class="trivia-dato">
+                                <p>Felix tiene la voz más grave de K-pop, con un registro vocal que llega hasta las 65Hz. Su voz es más grave que la mayoría de los cantantes masculinos adultos.</p>
+                            </div>
+                            <div class="trivia-meta">
+                                <span class="trivia-tipo">Voz</span>
+                                <button class="trivia-like"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Seungmin -->
+                    <article class="trivia-card" data-categoria="seungmin">
+                        <div class="trivia-imagen">
+                            <img src="../galeria/seu.webp" alt="Seungmin dato curioso">
+                            <span class="badge">Vocalista</span>
+                        </div>
+                        <div class="trivia-content">
+                            <h2 class="trivia-title">Seungmin</h2>
+                            <div class="trivia-dato">
+                                <p>Seungmin es un ávido fanático del béisbol y puede recitar estadísticas completas de jugadores coreanos. ¡Incluso ha cantado el himno nacional en juegos profesionales!</p>
+                            </div>
+                            <div class="trivia-meta">
+                                <span class="trivia-tipo">Pasatiempo</span>
+                                <button class="trivia-like"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- I.N -->
+                    <article class="trivia-card" data-categoria="in">
+                        <div class="trivia-imagen">
+                            <img src="../galeria/in.webp" alt="I.N dato curioso">
+                            <span class="badge">Maknae</span>
+                        </div>
+                        <div class="trivia-content">
+                            <h2 class="trivia-title">I.N</h2>
+                            <div class="trivia-dato">
+                                <p>I.N tiene un récord en JYP: fue el trainee más joven en debutar con la compañía a los 17 años. Originalmente audicionó como actor, pero fue reclutado como idol.</p>
+                            </div>
+                            <div class="trivia-meta">
+                                <span class="trivia-tipo">Récord</span>
+                                <button class="trivia-like"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Bang Chan 2 -->
+                    <article class="trivia-card" data-categoria="bangchan">
+                        <div class="trivia-imagen">
+                            <img src="../galeria/cris.webp" alt="Bang Chan dato curioso 2">
+                            <span class="badge">Líder</span>
+                        </div>
+                        <div class="trivia-content">
+                            <h2 class="trivia-title">Bang Chan</h2>
+                            <div class="trivia-dato">
+                                <p>Chan es conocido por su increíble memoria. Puede recordar los cumpleaños de todos los STAYs que ha conocido y detalles específicos sobre ellos.</p>
+                            </div>
+                            <div class="trivia-meta">
+                                <span class="trivia-tipo">Personalidad</span>
+                                <button class="trivia-like"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Felix 2 -->
+                    <article class="trivia-card" data-categoria="felix">
+                        <div class="trivia-imagen">
+                            <img src="../galeria/fel.jpg" alt="Felix dato curioso 2">
+                            <span class="badge destacado">Voz única</span>
+                        </div>
+                        <div class="trivia-content">
+                            <h2 class="trivia-title">Felix</h2>
+                            <div class="trivia-dato">
+                                <p>Felix tiene un ritual antes de cada presentación: come exactamente 5 piezas de chocolate. Dice que le da energía y le trae buena suerte.</p>
+                            </div>
+                            <div class="trivia-meta">
+                                <span class="trivia-tipo">Rutina</span>
+                                <button class="trivia-like"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Hyunjin 2 -->
+                    <article class="trivia-card" data-categoria="hyunjin">
+                        <div class="trivia-imagen">
+                            <img src="../galeria/anime.jpg" alt="Hyunjin dato curioso 2">
+                            <span class="badge destacado">Visual</span>
+                        </div>
+                        <div class="trivia-content">
+                            <h2 class="trivia-title">Hyunjin</h2>
+                            <div class="trivia-dato">
+                                <p>Hyunjin colecciona figuras de anime y tiene más de 100 en su departamento. Su favorita es una edición limitada de Sailor Moon que le tomó 2 años conseguir.</p>
+                            </div>
+                            <div class="trivia-meta">
+                                <span class="trivia-tipo">Colección</span>
+                                <button class="trivia-like"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Seungmin 2 -->
+                    <article class="trivia-card" data-categoria="seungmin">
+                        <div class="trivia-imagen">
+                            <img src="../galeria/seee.jpg" alt="Seungmin dato curioso 2">
+                            <span class="badge">Vocalista</span>
+                        </div>
+                        <div class="trivia-content">
+                            <h2 class="trivia-title">Seungmin</h2>
+                            <div class="trivia-dato">
+                                <p>Seungmin tiene un oído musical perfecto. Puede identificar cualquier nota musical y reproducirla con su voz sin referencia. ¡Incluso corrige a los miembros cuando desafinan!</p>
+                            </div>
+                            <div class="trivia-meta">
+                                <span class="trivia-tipo">Habilidad</span>
+                                <button class="trivia-like"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="paginacion">
+                    <button class="pagina-btn active">1</button>
+                    <button class="pagina-btn">2</button>
+                    <button class="pagina-btn siguiente">Siguiente <i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contenido">
+            <div class="logo-footer">
+                <img src="../imagenes/logoSKZ.png" alt="Logo Stray Kids">
+                <p>Fan page no oficial de Stray Kids</p>
+            </div>
+            <div class="contacto">
+                <h3>Contacto</h3>
+                <p>Email: info@straykids-fanpage.com</p>
+                <div class="redes-sociales">
+                    <a href="https://www.threads.com/@realstraykids" aria-label="Threads"><i class="fab fa-threads"></i></a>
+                    <a href="https://www.instagram.com/realstraykids" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/JYPEStrayKids" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/@StrayKids" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://open.spotify.com/artist/2dIgFjalVxs4ThymZ67YCE" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+                </div>
+            </div>
+            <div class="enlaces-rapidos">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                    <li><a href="discografia.html">Discografía</a></li>
+                    <li><a href="Eventos.html">Eventos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Stray Kids Fan Page. Desarrollado por una STAY - Rosedvel en redes sociales. No afiliada a JYP Entertainment. Derechos reservados del diseño</p>
+        </div>
+    </footer>
+
+    <script src="../js script code/trivia.js"></script>
+</body>
+</html>

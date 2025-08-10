@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stray Kids</title>
+        <link rel="stylesheet"  href="css code/home.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo"><img src="imagenes/logoSKZ.png" alt=""></div>
+            <nav>
+                <div class="desplegable">
+                    <button class="btnopciones">Despliega opciones</button>
+                    <div class="opciones">
+                        <a href="html code/integrantes.html">Integrantes</a>
+                        <a href="html code/Merchandising.html">Merchandising</a>
+                        <a href="html code/Eventos.html">Eventos</a>
+                        <a href="html code/discografia.html">Discografía</a>
+                        <a href="html code/galeria.html">Galería</a>
+                        <a href="html code/trivia.html">Datos Curiosos</a>
+                    </div>
+                </div>    
+                <div class="iniciarsesion">
+                    <a href="html code/IniciarSesion.html">Iniciar Sesion</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="inicio">
+                <h1>Conoce más de Stray Kids</h1>
+                <div class="controles-musica">
+                    <button class="boton-musica" onclick="toggleMusica()">
+                        <span class="icono-musica">▶</span> Reproducir Música
+                    </button>
+                    <div class="controles-adicionales">
+                        <button class="boton-control" onclick="skipBack()">⏮</button>
+                        <input type="range" class="control-volumen" min="0" max="1" step="0.1" value="0.7">
+                        <button class="boton-control" onclick="skipForward()">⏭</button>
+                    </div>
+                </div>
+            <audio id="audio-player" src="musica/stray kids.mp3"></audio>
+            <h2>↓↓↓↓↓↓↓</h2>
+            </section>
+            <!-- Sección Noticias -->
+            <section class="noticias">
+                <h2 class="titulo-seccion">Últimas Noticias</h2>
+                <div class="contenedor-noticias">
+                    <article class="noticia-destacada">
+                        <img src="imagenes/karma.jpg" alt="Stray Kids y su Nuevo Album" class="imagen-noticia">
+                        <div class="texto-noticia">
+                            <h3>Nuevo Álbum "KARMA"</h3>
+                            <p>Stray Kids lanza teasers de su esperado álbum, miles de fans esperan su regreso</p>
+                        </div>
+                    </article>
+                    <article class="noticia-secundaria">
+                        <img src="imagenes/alwayLove.jpeg" alt="Stray Kids colaboracion" class="imagen-noticia">
+                        <div class="texto-noticia">
+                            <h3>Always Love</h3>
+                            <p>D4vd saca canción junto con Hyunjin, ya disponible en las principales plataformas musicales</p>
+                        </div>
+                    </article>
+                    <article class="noticia-secundaria">
+                        <img src="imagenes/stay.jpg" alt="Stay cumple" class="imagen-noticia">
+                        <div class="texto-noticia">
+                            <h3>¡Feliz dia Stay!</h3>
+                            <p>Este 1 de Agosto se celebra el aniversario de la creacion del fandom, STAY!</p>
+                        </div>
+                    </article>
+                    <a href="html code/noticias.html" class="boton-ver-mas">Ver más noticias!</a>
+                </div>
+            </section>
+
+            <!-- Sección Integrantes -->
+            <section class="integrantes">
+                <h2 class="titulo-seccion">Integrantes</h2>
+                <div class="preview-integrantes">
+                    <div class="grid-integrantes">
+                        <img src="imagenes/BangChan.jpeg" alt="Bang Chan" class="foto-integrante">
+                        <img src="imagenes/Hyunjin.webp" alt="Hyunjin" class="foto-integrante">
+                        <img src="imagenes/Felix.jpg" alt="Felix" class="foto-integrante">
+                        <img src="imagenes/han.webp" alt="Han" class="foto-integrante">
+                        <img src="imagenes/seungmin.jpg" alt="seungmin" class="foto-integrante">
+                        <img src="imagenes/changbin.jpeg" alt="changbin" class="foto-integrante">
+                        <img src="imagenes/lee know.jpg" alt="lee" class="foto-integrante">
+                        <img src="imagenes/IN.jpg" alt="IN" class="foto-integrante">
+                    </div>
+                    <p class="descripcion-seccion">Stray Kids está formado por 8 talentosos miembros con habilidades únicas...</p>
+                    <a href="html code/integrantes.html" class="boton-ver-mas">Conoce a todos</a>
+                </div>
+            </section>
+
+            <!-- Sección Discografía -->
+            <section class="discografia">
+                <h2 class="titulo-seccion">Discografía</h2>
+                <div class="preview-discos">
+                    <div class="caratulas-discos">
+                        <img src="Albunes/hop.jpg" alt="Álbum HOP" class="caratula-disco">
+                        <img src="Albunes/giant.jpg" alt="Álbum Giant" class="caratula-disco">
+                        <img src="Albunes/ate.jpg" alt="Álbum Ate" class="caratula-disco">
+                    </div>
+                    <p>Explora su impresionante colección de álbumes llenos de poderosas letras y beats innovadores...</p>
+                    <a href="html code/Discografia.html" class="boton-ver-mas">Ver todos los álbumes</a>
+                </div>
+            </section>
+
+            <!-- Sección Eventos -->
+            <section class="eventos">
+                <h2 class="titulo-seccion">Próximos Eventos</h2>
+                <div class="preview-eventos">
+                    <img src="imagenes/imagenNoticiaCronogramaMv.jpg" alt="Calendario Stray Kids" class="imagen-evento">
+                    <div class="info-evento">
+                        <h3>Cronograma Actividades 07/26 a 08/01</h3>
+                        <p>¡Preparate para estar listo en estas fechas!</p>
+                        <a href="html code/Eventos.html" class="boton-ver-mas">Ver calendario completo</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección Galería -->
+            <section class="galeria">
+                <h2 class="titulo-seccion">Galería</h2>
+                <div class="preview-fotos">
+                    <div class="grid-galeria">
+                        <img src="imagenes/SKZ1.webp" alt="SKZ rosa" class="foto-galeria">
+                        <img src="imagenes/SKZ2.avif" alt="SKZ collage" class="foto-galeria">
+                        <img src="imagenes/SKZ3.webp" alt="SKZ photocard" class="foto-galeria">
+                    </div>
+                    <a href="html code/galeria.html" class="boton-ver-mas">Ver más fotos</a>
+                </div>
+            </section>
+
+            <!-- Sección Merchandising -->
+            <section class="merchandising">
+                <h2 class="titulo-seccion">Merchandising</h2>
+                <div class="preview-merch">
+                    <div class="productos-destacados">
+                        <div class="producto">
+                            <img src="imagenes/lighstick.webp" alt="Lightstick oficial" class="imagen-producto">
+                            <p>Lightstick Oficial 2ver.</p>
+                        </div>
+                        <div class="producto">
+                            <img src="imagenes/hoddie.jpg" alt="Hoodie SKZ" class="imagen-producto">
+                            <p>Hoodie Limited Edition</p>
+                        </div>
+                        <div class="producto">
+                            <img src="imagenes/peluches.jpg" alt="Peluches SKZ" class="imagen-producto">
+                            <p>SKZOO</p>
+                        </div>
+                        <div class="producto">
+                            <img src="imagenes/albumKarma.webp" alt="albumKarma SKZ" class="imagen-producto">
+                            <p>Merch del nuevo álbum KARMA</p>
+                        </div>
+                        <div class="producto">
+                            <img src="imagenes/mochila.webp" alt="Mochila SKZ" class="imagen-producto">
+                            <p>Mochila SKZ</p>
+                        </div>
+                        <div class="producto">
+                            <img src="imagenes/polo.jpg" alt="Polo SKZ" class="imagen-producto">
+                            <p>Polos de diferentes tallas</p>
+                        </div>
+                    </div>
+                    <a href="html code/Merchandising.html" class="boton-ver-mas">Tienda completa</a>
+                </div>
+            </section>
+
+            <!-- Sección Trivia -->
+            <section class="trivia">
+                <h2 class="titulo-seccion">Datos Curiosos</h2>
+                <div class="preview-trivia">
+                    <img src="imagenes/Datos.webp" alt="Stray Kids datos curiosos" class="imagen-trivia">
+                    <div class="dato-curioso">
+                        <h3>¿Sabías que...?</h3>
+                        <p>Segun la revista FORBES, es la banda de K-Pop que más rápido ha alcanzado éxitos profesionales.</p>
+                        <a href="html code/trivia.html" class="boton-ver-mas">Más datos curiosos</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección Fan Zone -->
+            <section class="fan-zone">
+                <h2 class="titulo-seccion">Fan Zone</h2>
+                <div class="contenido-fanzone">
+                    <img src="imagenes/case.jpg" alt="Fans STAY" class="imagen-fans">
+                    <div class="info-fanzone">
+                        <h3>Únete a la comunidad STAY</h3>
+                        <p>Descubre lo que puedes ver en nuestra zona STAY.</p>
+                        <a href="html code/zonaSTAY.html" class="boton-ver-mas">Únete a la comunidad</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-contenido">
+                <div class="logo-footer">
+                    <img src="imagenes/logoSKZ.png" alt="Logo Stray Kids">
+                </div>
+                <div class="contacto">
+                    <h3>Contacto</h3>
+                    <p>Email: info@straykidsofficial.com</p>
+                    <div class="redes-sociales">
+                        <a href="https://www.threads.com/@realstraykids?xmt=AQF0gGJm0coVU-Q9FoyYOBZ4kqvuX8Yax1P5SqUuttgyUnU"><img src="imagenes/Threads.png" alt="Threads"></a>
+                        <a href="https://www.instagram.com/realstraykids"><img src="imagenes/ig.png" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/JYPEStrayKids"><img src="imagenes/fb.png" alt="Facebook"></a>
+                        <a href="https://www.youtube.com/@StrayKids/featured"><img src="imagenes/yt.png" alt="YouTube"></a>
+                        <a href="https://open.spotify.com/intl-es/artist/2dIgFjalVxs4ThymZ67YCE?si=RgMIax0sRGuZZaEQOy5kSQ"><img src="imagenes/spo.png" alt="Spotify"></a>
+                    </div>
+                </div>
+
+                <div class="enlaces-rapidos">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="html code/index.html">Inicio</a></li>
+                        <li><a href="html code/integrantes.html">Integrantes</a></li>
+                        <li><a href="html code/Discografia.html">Discografía</a></li>
+                        <li><a href="html code/Eventos.html">Eventos</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Stray Kids Fan Page. Desarrollado por una STAY - Rosedvel en redes sociales. No afiliada a JYP Entertainment. Derechos reservados del diseño</p>
+            </div>
+        </footer>
+        <script src="js script code/home.js"></script>
+    </body>
+</html>

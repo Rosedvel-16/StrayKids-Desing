@@ -1,0 +1,571 @@
+/* Estilos específicos para la Zona STAY */
+.pagina-stay {
+    background-color: #000;
+    color: #fff;
+    margin-top: 60px;
+}
+
+/* Hero Section */
+.hero-stay {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), 
+                url('../galeria/stay.jpg_large') no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    color: #fa9595;
+    font-weight: 500;
+}
+
+/* Contenido Principal */
+.contenido-stay {
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Secciones */
+.seccion-stay {
+    margin-bottom: 60px;
+}
+
+.titulo-seccion {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #e53e3e;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.titulo-seccion i {
+    font-size: 1.8rem;
+}
+
+/* Fan Arts */
+.arts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.art-card {
+    background-color: #111;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s;
+    border: 1px solid #333;
+}
+
+.art-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(229, 62, 62, 0.2);
+    border-color: #e53e3e;
+}
+
+.art-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.art-card:hover img {
+    transform: scale(1.05);
+}
+
+.art-info {
+    padding: 15px;
+}
+
+.art-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.art-info p {
+    color: #aaa;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.art-info span {
+    color: #e53e3e;
+    font-weight: 500;
+}
+
+.art-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.art-like, .art-share {
+    background: none;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.art-like:hover, .art-share:hover {
+    color: #e53e3e;
+}
+
+/* Eventos de Fans */
+.eventos-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.evento-card {
+    background-color: #111;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border: 1px solid #333;
+    transition: all 0.3s;
+}
+
+.evento-card:hover {
+    border-color: #e53e3e;
+    transform: translateX(5px);
+}
+
+.evento-fecha {
+    background-color: #e53e3e;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 70px;
+}
+
+.evento-fecha .dia {
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: block;
+    line-height: 1;
+}
+
+.evento-fecha .mes {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.evento-info {
+    flex-grow: 1;
+}
+
+.evento-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.evento-info p {
+    color: #ccc;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.evento-meta {
+    display: flex;
+    gap: 15px;
+    color: #aaa;
+    font-size: 0.8rem;
+}
+
+.evento-meta i {
+    margin-right: 5px;
+    color: #e53e3e;
+}
+
+.evento-unirse {
+    background-color: #e53e3e;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.evento-unirse:hover {
+    background-color: #c53030;
+    transform: scale(1.05);
+}
+
+/* Proyectos de Fans */
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 500px) {
+    .proyectos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.proyecto-card {
+    background-color: #111;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #333;
+    transition: all 0.3s;
+}
+
+.proyecto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(229, 62, 62, 0.2);
+    border-color: #e53e3e;
+}
+
+.proyecto-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.proyecto-content {
+    padding: 20px;
+}
+
+.proyecto-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.proyecto-content p {
+    color: #ccc;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.progreso {
+    margin-bottom: 20px;
+}
+
+.barra-progreso {
+    height: 8px;
+    background-color: #e53e3e;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.progreso span {
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+.boton-donar {
+    background-color: #e53e3e;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 500;
+    width: 100%;
+}
+
+.boton-donar:hover {
+    background-color: #c53030;
+    transform: translateY(-2px);
+}
+
+/* Foro de Fans */
+.foro-contenido {
+    background-color: #111;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #333;
+}
+
+.foro-destacado {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.foro-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.foro-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.foro-usuario h3 {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 3px;
+}
+
+.foro-usuario p {
+    color: #aaa;
+    font-size: 0.8rem;
+}
+
+.foro-mensaje h4 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.foro-mensaje p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.foro-acciones {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.foro-like, .foro-comentar, .foro-compartir {
+    background: none;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.foro-like:hover, .foro-comentar:hover, .foro-compartir:hover {
+    color: #e53e3e;
+}
+
+.nuevo-post {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.nuevo-post input {
+    flex-grow: 1;
+    background-color: #222;
+    border: 1px solid #333;
+    border-radius: 30px;
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 0.9rem;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.nuevo-post input:focus {
+    border-color: #e53e3e;
+}
+
+.boton-publicar {
+    background-color: #e53e3e;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.boton-publicar:hover {
+    background-color: #c53030;
+    transform: translateY(-2px);
+}
+
+/* Newsletter */
+.newsletter-stay {
+    background-color: #111;
+    padding: 50px 0;
+    border-top: 3px solid #e53e3e;
+    border-bottom: 3px solid #e53e3e;
+}
+
+.newsletter-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.newsletter-content h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter-content p {
+    color: #ccc;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+.form-newsletter {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-newsletter input {
+    flex-grow: 1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px 0 0 30px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.form-newsletter button {
+    background-color: #e53e3e;
+    color: white;
+    border: none;
+    padding: 0 25px;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 500;
+}
+
+.form-newsletter button:hover {
+    background-color: #c53030;
+}
+
+/* Botón Ver Más */
+.boton-ver-mas {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #e53e3e;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.boton-ver-mas:hover {
+    background-color: #c53030;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(229, 62, 62, 0.3);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-stay {
+        height: 250px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+    
+    .evento-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .evento-fecha {
+        margin-bottom: 15px;
+    }
+    
+    .evento-meta {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-stay {
+        height: 200px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .form-newsletter {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .form-newsletter input, 
+    .form-newsletter button {
+        border-radius: 30px;
+        width: 100%;
+    }
+    
+    .nuevo-post {
+        flex-direction: column;
+    }
+    
+    .nuevo-post input {
+        width: 100%;
+    }
+    
+    .boton-publicar {
+        width: 100%;
+    }
+}

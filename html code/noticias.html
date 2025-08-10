@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Noticias de Stray Kids | STAY Updates</title>
+        <link rel="stylesheet" href="../css code/footer-header.css">
+        <link rel="stylesheet" href="../css code/noticias.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo"><img src="../imagenes/logoSKZ.png" alt="Logo Stray Kids"></div>
+            <nav>
+                <div class="desplegable">
+                    <button class="btnopciones">Despliega opciones</button>
+                    <div class="opciones">
+                        <a href="../index.html">Inicio</a>
+                        <a href="integrantes.html">Integrantes</a>
+                        <a href="Merchandising.html">Merchandising</a>
+                        <a href="Eventos.html">Eventos</a>
+                        <a href="discografia.html">Discografía</a>
+                        <a href="galeria.html">Galería</a>
+                        <a href="trivia.html">Datos Curiosos</a>
+                    </div>
+                </div>    
+                <div class="iniciarsesion">
+                    <a href="IniciarSesion.html">Iniciar Sesion</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="pagina-noticias">
+            <section class="hero-noticias">
+                <div class="hero-content">
+                    <h1>Últimas Noticias de Stray Kids</h1>
+                    <p>Toda la información actualizada sobre tus idols favoritos</p>
+                </div>
+            </section>
+
+            <section class="filtros-noticias">
+                <div class="container">
+                    <div class="filtros-content">
+                        <div class="search-box">
+                            <input type="text" placeholder="Buscar noticias..." id="search-input">
+                            <button id="search-btn"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="categorias">
+                            <button class="filter-btn active" data-filter="all">Todas</button>
+                            <button class="filter-btn" data-filter="album">Álbumes</button>
+                            <button class="filter-btn" data-filter="musica">Música</button>
+                            <button class="filter-btn" data-filter="concierto">Conciertos</button>
+                            <button class="filter-btn" data-filter="premio">Premios</button>
+                            <button class="filter-btn" data-filter="stay">STAY</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="lista-noticias">
+                <div class="container">
+                    <div class="noticias-grid">
+                        <!-- Noticia Destacada -->
+                        <article class="noticia-destacada" data-categoria="album">
+                            <div class="noticia-imagen">
+                                <img src="../imagenes/karma.jpg" alt="Stray Kids nuevo álbum KARMA">
+                                <span class="badge destacado">Destacado</span>
+                            </div>
+                            <div class="noticia-content">
+                                <div class="noticia-meta">
+                                    <span class="categoria">Álbum</span>
+                                    <span class="fecha">22 Julio 2025</span>
+                                </div>
+                                <h2>Stray Kids anuncia su nuevo álbum "KARMA" con impactante teaser</h2>
+                                <p>La agencia JYP Entertainment ha lanzado los primeros teasers del esperado álbum "KARMA", que marcará un nuevo hito en la carrera del grupo. Los STAYs están emocionados con el nuevo COMEBACK!!</p>
+                                <a href="#" class="leer-mas">Leer más <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <!-- Noticia 2 -->
+                        <article class="noticia" data-categoria="musica">
+                            <div class="noticia-imagen">
+                                <img src="../imagenes/alwayLove.jpeg" alt="Hyunjin colaboración con D4vd">
+                                <span class="badge">Colaboración</span>
+                            </div>
+                            <div class="noticia-content">
+                                <div class="noticia-meta">
+                                    <span class="categoria">Música</span>
+                                    <span class="fecha">27 Junio 2025</span>
+                                </div>
+                                <h2>Hyunjin sorprende con colaboración en "Always Love" de D4vd</h2>
+                                <p>El integrante de Stray Kids ha participado en el nuevo sencillo del artista D4vd, mostrando una faceta diferente de su talento musical.</p>
+                                <a href="#" class="leer-mas">Leer más <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <!-- Noticia 3 -->
+                        <article class="noticia" data-categoria="stay">
+                            <div class="noticia-imagen">
+                                <img src="../imagenes/cronograma.jpg" alt="Stay Week">
+                                <span class="badge destacado">Cronograma</span>
+                            </div>
+                            <div class="noticia-content">
+                                <div class="noticia-meta">
+                                    <span class="categoria">STAY</span>
+                                    <span class="fecha">26 Julio 2025</span>
+                                </div>
+                                <h2>STAY! Preparate para esta STAY WEEK</h2>
+                                <p>Este es un evento anual para conmemorar el aniversario del fandom de Stray Kids, STAY, con el lanzamiento de contenido adicional del 26 de julio al 1 de agosto.</p>
+                                <a href="#" class="leer-mas">Leer más <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <!-- Noticia 4 -->
+                        <article class="noticia" data-categoria="album">
+                            <div class="noticia-imagen">
+                                <img src="../imagenes/album.webp" alt="Karma versiones">
+                                <span class="badge">Álbum</span>
+                            </div>
+                            <div class="noticia-content">
+                                <div class="noticia-meta">
+                                    <span class="categoria">Álbum</span>
+                                    <span class="fecha">25 Julio 2025</span>
+                                </div>
+                                <h2>Versiones del Álbum KARMA</h2>
+                                <p>Este nuevo álbum tendrá 6 versiones que puedes adquirir. Dentro de cada uno varía los regalos que incluyen.</p>
+                                <a href="#" class="leer-mas">Leer más <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <!-- Noticia 5 - Versiones del Álbum -->
+                        <article class="noticia" data-categoria="album">
+                            <div class="noticia-imagen">
+                                <div class="album-carousel">
+                                    <div class="carousel-container">
+                                        <div class="carousel-slide">
+                                            <img src="../imagenes/karmaSZOO.webp" alt="Karma SZOO Version" class="active">
+                                            <img src="../imagenes/Karmacompact.webp" alt="Karma Version 2">
+                                            <img src="../imagenes/karmaVINYL.webp" alt="Karma Version 3">
+                                            <img src="../imagenes/ceremony ver.jpg" alt="Karma Version 4">
+                                            <img src="../imagenes/acording.jpg" alt="Karma Version 5">
+                                            <img src="../imagenes/crystalVynilKarma.jpg" alt="Karma Version 6">
+                                        </div>
+                                        <button class="carousel-btn prev" aria-label="Previous image">❮</button>
+                                        <button class="carousel-btn next" aria-label="Next image">❯</button>
+                                    </div>
+                                    <div class="carousel-dots">
+                                        <!-- Los puntos se generarán con JavaScript -->
+                                    </div>
+                                </div>
+                                <span class="badge">Versiones</span>
+                            </div>
+                            <div class="noticia-content">
+                                <div class="noticia-meta">
+                                    <span class="categoria">Álbum</span>
+                                    <span class="fecha">24 Julio 2025</span>
+                                </div>
+                                <h2>Stray Kids revela las 6 versiones del álbum "KARMA"</h2>
+                                <p>El grupo ha mostrado las diferentes versiones físicas de su próximo álbum, cada una con un concepto único y fotos exclusivas. Incluye versión SKZOO con diseños especiales de los personajes.</p>
+                                <a href="#" class="leer-mas">Leer más <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <!-- Noticia 6 -->
+                        <article class="noticia" data-categoria="premio">
+                            <div class="noticia-imagen">
+                                <img src="../imagenes/KCA2025Logo.jpg" alt="KCA">
+                                <span class="badge">KCA</span>
+                            </div>
+                            <div class="noticia-content">
+                                <div class="noticia-meta">
+                                    <span class="categoria">Premio</span>
+                                    <span class="fecha">7 Julio 2025</span>
+                                </div>
+                                <h2>Nominación a los Nickelodeon Kids' Choice Awards</h2>
+                                <p>Los chicos estuvieron nominados en la categoría: "Grupo musical favorito" y "Estrella global musical favorita" donde quedaron Ganadores en la primera categoría.</p>
+                                <a href="#" class="leer-mas">Leer más <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="paginacion">
+                        <button class="pagina-btn active">1</button>
+                        <button class="pagina-btn">2</button>
+                        <button class="pagina-btn">3</button>
+                        <button class="pagina-btn siguiente">Siguiente <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-contenido">
+                <div class="logo-footer">
+                    <img src="../imagenes/logoSKZ.png" alt="Logo Stray Kids">
+                    <p>Fan page no oficial de Stray Kids</p>
+                </div>
+                <div class="contacto">
+                    <h3>Contacto</h3>
+                    <p>Email: info@straykids-fanpage.com</p>
+                    <div class="redes-sociales">
+                        <a href="https://www.threads.com/@realstraykids" aria-label="Threads"><i class="fab fa-threads"></i></a>
+                        <a href="https://www.instagram.com/realstraykids" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/JYPEStrayKids" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@StrayKids" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://open.spotify.com/artist/2dIgFjalVxs4ThymZ67YCE" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+                    </div>
+                </div>
+                <div class="enlaces-rapidos">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="integrantes.html">Integrantes</a></li>
+                        <li><a href="discografia.html">Discografía</a></li>
+                        <li><a href="Eventos.html">Eventos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Stray Kids Fan Page. Desarrollado por una STAY - Rosedvel en redes sociales. No afiliada a JYP Entertainment. Derechos reservados del diseño</p>
+            </div>
+        </footer>
+
+        <script src="../js script code/noticias.js"></script>
+    </body>
+</html>
